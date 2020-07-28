@@ -1,0 +1,76 @@
+slider {
+	display: block;
+	width: 70%;
+	height: 70%;
+	overflow: hidden;
+	position: absolute;
+}
+
+slider > *{
+	position: absolute;
+	display: block;
+	width: 70%;
+	height: 70%;
+	animation: slide 12s infinite;
+	overflow: hidden;
+}
+slide:nth-child(1){
+	left:0%;
+	animation-delay: -1s;
+	background-image: url(12.jpg); 
+	background-size: cover:
+	background-position: bottom;
+
+}
+
+slide:nth-child(2){
+	animation-delay: -2s;
+	background-image: url(13.jpg); 
+	background-size: cover:
+	background-position: bottom;
+
+}
+
+slide:nth-child(3){
+	animation-delay: -5s;
+	background-image: url(14.jpg); 
+	background-size: cover:
+	background-position: bottom;
+
+}
+
+slide:nth-child(4){
+	
+	animation-delay: 0s;
+	background-image: url(15.jpg); 
+	background-size: cover:
+	background-position: bottom;
+
+}
+
+slide:nth-child(5){
+	animation-delay: 1s;
+	background-image: url(16.jpg); 
+	background-size: cover:
+	background-position: bottom;
+
+}
+
+ slide p {
+	font-family: comfortaa;
+	font-size: 70px;
+	text-align: bottom;
+	display: inline-block;
+	width: 70%;
+	margin-top:340px;
+	color: #fff;
+}
+
+@keyfreames slide {
+	0% {left:70%; width: 70%;}
+		5% {left:0%;}
+		25% {left:0%;}
+		30% {left:-70%;width: 70%; }
+		30.0001% {left: 70%; width: 0%;}
+
+}
